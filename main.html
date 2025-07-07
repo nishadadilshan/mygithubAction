@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title  >Simple Text Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f0f0f0;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter Text Below:</h2>
+  <input type="text" id="myTextBox" placeholder="Type something...">
+
+  <script>
+    // Example: Log value when user presses Enter
+    document.getElementById("myTextBox").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        console.log("Text entered:", this.value);
+        alert("You typed: " + this.value);
+      }
+    });
+  </script>
+</body>
+</html>
