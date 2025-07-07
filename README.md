@@ -1,2 +1,2 @@
 # mygithubAction
-github actions
+GitHub actions
